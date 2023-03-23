@@ -1,4 +1,5 @@
 #include "stm32l4xx_hal.h" // bibliothèque pour la gestion de projet Arduino
+#include "main.h"
 
 // Constantes
 // Vous n'êtes pas obligé d'utiliser ces valeurs, vous pouvez directement écrire un nombre de 0 à 255
@@ -6,12 +7,6 @@
 #define MOTEUR_50  128  // valeur pour une PWM de  50%
 #define MOTEUR_25  64   // valeur pour une PWM de  25%
 #define MOTEUR_0   0    // valeur pour une PWM de   0%
-
-// Pins provenant du fichier principal
-extern const int MOTEUR_G_PWM;
-extern const int MOTEUR_G_DIR_1 ;
-extern const int MOTEUR_D_PWM;
-extern const int MOTEUR_D_DIR_1 ;
 
 // Déclarations des fonctions
 void moteur_avance();

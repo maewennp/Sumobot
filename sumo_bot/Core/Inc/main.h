@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "moteur.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -48,6 +48,8 @@ extern "C" {
 /* USER CODE BEGIN EM */
 
 /* USER CODE END EM */
+
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
@@ -67,12 +69,12 @@ void Error_Handler(void);
 #define SWCLK_GPIO_Port GPIOA
 #define VCP_RX_Pin GPIO_PIN_15
 #define VCP_RX_GPIO_Port GPIOA
-#define LD3_Pin GPIO_PIN_3
-#define LD3_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 #define MOTEUR_G_DIR_1 GPIO_PIN_12
+#define MOTEUR_G_DIR_2 GPIO_PIN_13
 #define MOTEUR_D_DIR_1 GPIO_PIN_9
+#define MOTEUR_D_DIR_2 GPIO_PIN_10
 #define MOTEUR_G_PWM GPIO_PIN_8
 #define MOTEUR_D_PWM GPIO_PIN_9
 

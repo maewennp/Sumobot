@@ -1,5 +1,4 @@
 #include "moteur.h"
-#include "main.h"
 
 /****************************************************************************************************************************
  * Fonction d'avance du robot
@@ -11,8 +10,8 @@
  ***************************************************************************************************************************/
 void moteur_avance()
 {
-	HAL_GPIO_WritePin(GPIOA, MOTEUR_G_DIR_1, SET);
-	HAL_GPIO_WritePin(GPIOA, MOTEUR_G_DIR_2, RESET);
+	HAL_GPIO_WritePin(GPIOB, MOTEUR_G_DIR_1, SET);
+	HAL_GPIO_WritePin(GPIOB, MOTEUR_G_DIR_2, RESET);
 	HAL_GPIO_WritePin(GPIOA, MOTEUR_D_DIR_1, SET);
 	HAL_GPIO_WritePin(GPIOA, MOTEUR_D_DIR_2, RESET);
 	/*analogWrite(MOTEUR_D_PWM, val_droite);*/
