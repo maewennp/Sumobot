@@ -23,11 +23,14 @@ Programmation de la carte Arduino :
 ![Arduini Nano Pinout Diagram](https://content.arduino.cc/assets/Pinout-NANO_latest.png)
 
 Datasheet Arduino : 
-![alt tag]https://user-images.githubusercontent.com/120471422/228889186-33cc9b59-831a-461e-a0f5-7a00db9d321e.png
+![image](https://user-images.githubusercontent.com/120471422/228890733-63ec915f-abc7-4958-9b4e-0105a20371b4.png)
+
 
 GitLab de polybot-Grenoble pour quelques exemples sur STM32 : 
 https://gitlab.com/polybot-grenoble/tutorials/tutorials-cubeide-pwm-and-servos/-/blob/master/Core/Src/main.c 
 
 
 Pour les correspondances des PIN sur le STM32 (page 29) 
-https://www.st.com/resource/en/user_manual/dm00231744-stm32-nucleo32-boards-mb1180-stmicroelectronics.pdf  
+![image](https://user-images.githubusercontent.com/120471422/228890526-281e2cce-745d-496b-926c-e4475890644d.png)
+
+https://www.st.com/resource/en/user_manual/dm00231744-stm32-nucleo32-boards-mb1180-stmicroelectronics.pdf 
